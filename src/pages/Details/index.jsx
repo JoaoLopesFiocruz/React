@@ -1,9 +1,10 @@
 import {Container,Links,Content} from './style.js'
 import {Header} from '../../components/Header'
 import {ButtonText} from '../../components/ButtonText'
-import {Button} from '../../components/Button'
+import {Button} from '../../components/Button/index.js'
 import {Section} from '../../components/section'
 import {Tag} from '../../components/Tag'
+
 export function Details(){
   return(
     <Container>

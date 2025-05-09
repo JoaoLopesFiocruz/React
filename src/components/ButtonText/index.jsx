@@ -1,11 +1,10 @@
 import {Container} from './style.js'
-interface ButtonTextProps {
-    title: string;
-}
-export function ButtonText({title,...rest}:ButtonTextProps){
+
+export function ButtonText({title,isActive=false,...rest}){
     return(
         <Container
         type="button"
+        isActive={isActive}
         {...rest}>
             {title}
         </Container>
