@@ -1,5 +1,5 @@
 import { FiPlus } from 'react-icons/fi';
-
+import { Link } from 'react-router-dom';
 import {Container, Brand, Menu, Search, Content, NewNote} from './style.js'
 import {Note} from '../../components/Note/index.jsx'
 import {ButtonText} from '../../components/ButtonText/index.jsx'
@@ -37,7 +37,7 @@ export function Home(){
                 </Section>
             </Content>
 
-            <NewNote>
+            <NewNote to='/new'>
                 <FiPlus />
                 criar nota
             </NewNote>

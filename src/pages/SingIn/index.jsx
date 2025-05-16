@@ -1,11 +1,11 @@
 import {Container,Form,Background} from './style.js'
-
+import { Link } from 'react-router-dom'
 import { Input } from '../../components/Input/index.jsx'
 import {Button} from '../../components/Button/index.jsx'
 
 import { FiLogIn,FiMail,FiLock } from 'react-icons/fi'
 
-export function SingIn(){
+export function SignIn(){
     return(<Container>
         <Form>
             <h1>Rocket Notes</h1>
@@ -24,9 +24,9 @@ export function SingIn(){
             />
 
             <Button title="Entrar"/>
-            <a href="#">
+            <Link to='/register'>
                 criar conta
-            </a>
+            </Link>
         </Form>
 
         <Background />

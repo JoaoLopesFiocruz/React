@@ -1,5 +1,5 @@
 import {Container,Form,Background} from './style.js'
-
+import { Link } from 'react-router-dom'
 import { Input } from '../../components/Input/index.jsx'
 import {Button} from '../../components/Button/index.jsx'
 
@@ -31,9 +31,9 @@ export function SingUp(){
             />
 
             <Button title="Cadastrar"/>
-            <a href="#">
+            <Link to='/'>
                 voltar para o login
-            </a>
+            </Link>
         </Form>
     </Container>)
 }
